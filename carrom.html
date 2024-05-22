@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Carrom</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0,0,0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Set flex-direction to column */
+        }
+
+        #logo {
+            margin-top: 20px; /* Adjust margin */
+            width: 220px;
+            height: 120px;
+        }
+
+        nav {
+            margin-top: 20px; /* Adjust margin */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Set display to flex */
+        }
+
+        nav li {
+            margin: 0 80px; /* Adjust margin */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 32px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 183, 0);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px; /* Adjust font size */
+            margin-top: 20px; /* Adjust margin-top */
+            margin-bottom: 10px;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px; /* Adjust font size */
+            padding: 20px;
+            margin-top: 10px; /* Adjust margin-top */
+            line-height: 1.5;
+            color: rgb(0 147 5); /* Change paragraph color */
+        }
+
+        .about-section {
+            max-width: 800px; /* Adjust max width */
+            margin-top: 40px; /* Adjust margin-top */
+        }
+        .copyright {
+            color: rgb(255, 180, 66); /* Change copyright color */
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            max-width: 1000px; /* Adjust max width */
+        }
+
+        .section img {
+            width: 475px; /* Adjust image width */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .section .content {
+            max-width: 600px; /* Adjust max width */
+        }
+
+        .table-section {
+            margin-top: 40px;
+            max-width: 1000px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); /* Make table background opaque */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+    </style>
+</head>
+
+<body>
+    <video id="logo" autoplay loop muted>
+        <source src="Logo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="select.html">Select Game</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="about&contact.html">About & Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <img src="Images2/carrom1.jpeg" alt="Carrom Image">
+        <div class="content">
+            <h1>What is Carrom?</h1>
+            <p>Carrom is a popular tabletop game of Indian origin. It is played on a square board with pockets at each corner, where players use a striker disk to flick lighter object disks (carrom men) into the pockets.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>History of Carrom</h1>
+            <p>Carrom is believed to have originated in India around the 18th century. It gained popularity in the Indian subcontinent and spread to other parts of Asia and beyond. The game has seen many international championships and is a favorite in households and clubs.</p>
+        </div>
+        <img src="Images2/carrom2.jpeg" alt="Carrom Image">
+    </div>
+
+    <div class="section">
+        <img src="Images2/carrom3.jpeg" alt="Carrom Image">
+        <div class="content">
+            <h1>How to Play Carrom</h1>
+            <p>Carrom is played on a wooden board with a smooth surface. Players use a striker to hit and pocket carrom men, aiming to pocket their own color of pieces while avoiding the opponent's pieces. The game requires skill and precision to control the striker and carrom men.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>Rules of Carrom</h1>
+            <p>Key rules of Carrom include:</p>
+            <p>1. Each player has to pocket all their carrom men before the opponent.</p>
+            <p>2. The Queen, the red piece, must be pocketed and covered by another piece of the player's color.</p>
+            <p>3. If a player pockets the striker, they incur a penalty, and a piece is returned to the board.</p>
+            <p>4. The first player to pocket all their pieces, including covering the Queen, wins the game.</p>
+        </div>
+        <img src="Images2/carrom4.jpeg" alt="Carrom Rules Image">
+    </div>
+
+    <div class="table-section">
+        <h2>Top Carrom Players</h2>
+        <table>
+            <tr>
+                <th>Player Name</th>
+                <th>Country of Origin</th>
+                <th>Type of League</th>
+            </tr>
+            <tr>
+                <td>Anthony Maria Irudayam</td>
+                <td>India</td>
+                <td>International Carrom Federation</td>
+            </tr>
+            <tr>
+                <td>A. K. Brandao</td>
+                <td>Sri Lanka</td>
+                <td>World Carrom League</td>
+            </tr>
+            <tr>
+                <td>Jayanthi Kumaresh</td>
+                <td>India</td>
+                <td>Asian Carrom Championship</td>
+            </tr>
+            <tr>
+                <td>Chamil Cooray</td>
+                <td>Sri Lanka</td>
+                <td>International Carrom Federation</td>
+            </tr>
+            <tr>
+                <td>Illango Adityan</td>
+                <td>India</td>
+                <td>World Carrom League</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="copyright">&copy; Sports Info. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hockey</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0,0,0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Set flex-direction to column */
+        }
+
+        #logo {
+            margin-top: 20px; /* Adjust margin */
+            width: 220px;
+            height: 120px;
+        }
+
+        nav {
+            margin-top: 20px; /* Adjust margin */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Set display to flex */
+        }
+
+        nav li {
+            margin: 0 80px; /* Adjust margin */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 32px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 183, 0);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px; /* Adjust font size */
+            margin-top: 20px; /* Adjust margin-top */
+            margin-bottom: 10px;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px; /* Adjust font size */
+            padding: 20px;
+            margin-top: 10px; /* Adjust margin-top */
+            line-height: 1.5;
+            color: rgb(0 147 5); /* Change paragraph color */
+        }
+
+        .about-section {
+            max-width: 800px; /* Adjust max width */
+            margin-top: 40px; /* Adjust margin-top */
+        }
+        .copyright {
+            color: rgb(255, 180, 66); /* Change copyright color */
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            max-width: 1000px; /* Adjust max width */
+        }
+
+        .section img {
+            width: 475px; /* Adjust image width */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .section .content {
+            max-width: 600px; /* Adjust max width */
+        }
+
+        .table-section {
+            margin-top: 40px;
+            max-width: 1000px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); /* Make table background opaque */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+    </style>
+</head>
+
+<body>
+    <video id="logo" autoplay loop muted>
+        <source src="Logo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="select.html">Select Game</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="about&contact.html">About & Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <img src="Images2/hockey1.jpg" alt="Hockey Image">
+        <div class="content">
+            <h1>What is Hockey?</h1>
+            <p>Hockey is a fast-paced team sport played on ice, where the objective is to score goals by hitting a puck into the opposing team's net using a hockey stick. It is a popular sport in many countries, particularly in Canada, the United States, and Northern Europe.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>History of Hockey</h1>
+            <p>Hockey has ancient origins, with various forms of stick-and-ball games played across different cultures. Modern ice hockey as we know it today originated in Canada in the late 19th century. The first organized indoor game was played in Montreal in 1875, and the sport quickly spread to other countries.</p>
+        </div>
+        <img src="Images2/hockey2.jpg" alt="Hockey Image">
+    </div>
+
+    <div class="section">
+        <img src="Images2/hockey3.jpg" alt="Hockey Image">
+        <div class="content">
+            <h1>How to Play Hockey</h1>
+            <p>Hockey is played on an ice rink, with two teams of six players each, including a goaltender. Players use their sticks to pass, shoot, and control the puck, aiming to score goals while preventing the opposing team from doing the same. The game is known for its physicality, speed, and skill.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>Rules of Hockey</h1>
+            <p>Hockey has a comprehensive set of rules that govern how the game is played. Key rules include offside, icing, penalties, and the duration of the game.</p>
+            <p>Offside rule: A player is offside if they enter the attacking zone before the puck does.</p>
+            <p>Icing: Icing occurs when a player shoots the puck across both the center red line and the opposing team's goal line without it being touched.</p>
+            <p>Penalties: Penalties are assessed for infractions such as tripping, hooking, and high-sticking, resulting in a player being sent to the penalty box for a designated time.</p>
+            <p>Duration of the game: A standard hockey game consists of three periods, each lasting 20 minutes, with intermissions between periods.</p>
+        </div>
+        <img src="Images2/hockey4.jpg" alt="Hockey Rules Image">
+    </div>
+
+    <div class="table-section">
+        <h2>Most Goals in Hockey</h2>
+        <table>
+            <tr>
+                <th>Player Name</th>
+                <th>Country of Origin</th>
+                <th>Goals</th>
+                <th>Type of League</th>
+            </tr>
+            <tr>
+                <td>Wayne Gretzky</td>
+                <td>Canada</td>
+                <td>894</td>
+                <td>NHL</td>
+            </tr>
+            <tr>
+                <td>Gordie Howe</td>
+                <td>Canada</td>
+                <td>801</td>
+                <td>NHL</td>
+            </tr>
+            <tr>
+                <td>Jaromir Jagr</td>
+                <td>Czech Republic</td>
+                <td>766</td>
+                <td>NHL</td>
+            </tr>
+            <tr>
+                <td>Brett Hull</td>
+                <td>Canada/USA</td>
+                <td>741</td>
+                <td>NHL</td>
+            </tr>
+            <tr>
+                <td>Marcel Dionne</td>
+                <td>Canada</td>
+                <td>731</td>
+                <td>NHL</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="copyright">&copy; Sports Info. All rights reserved.</p>
+
+</body>
+</html>

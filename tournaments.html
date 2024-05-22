@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournaments</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(221, 228, 14);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Set flex-direction to column */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+        video {
+            margin-left: 400px;
+            width: 500px;
+            height: 157px;
+        }
+
+        #logo {
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 500px;
+            height: 120px;
+        }
+
+       h2 {
+        font-size: 30px;
+        margin-left: 205px;
+        color: darkorange;
+
+       }
+
+        nav {
+            margin-left: auto;
+            margin-bottom: 95px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Set display to flex */
+            gap: 130px; /* Adjust the gap between list items */
+        }
+
+        nav li {
+            margin: 0 10px; /* Adjust margin */
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 32px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 183, 0);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            margin: 20px auto; /* Adjust margin */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        td img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        #form-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(84, 84, 84);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 9999;
+        }
+
+        #form-popup form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #form-popup input[type="text"], 
+        #form-popup input[type="email"], 
+        #form-popup input[type="submit"] {
+            margin: 10px 0;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #3e3e3e;
+            font-size: 16px;
+        }
+
+        .thank-you {
+            display: none;
+            color: rgb(252, 2, 2);
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .copyright {
+            color: rgb(255, 180, 66); /* Change copyright color */
+        }
+    </style>
+</head>
+<body>
+    <div id="container"> <!-- New container div -->
+        <video autoplay loop muted>
+            <source src="Logo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="select.html">Select Game</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="about&contact.html">About & Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="content"> <!-- New div to contain content -->
+            <h2>Choose the Game or sport you wish to play for Tournaments</h2> <br><!-- Instruction -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indoor Games</th>
+                        <th>Outdoor Games</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Tournaments/chess.jpg" alt="Chess" onclick="showForm('Chess')"></td>
+                        <td><img src="Tournaments/cricket.jpg" alt="Cricket" onclick="showForm('Cricket')"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Tournaments/ludo.jpg" alt="Ludo" onclick="showForm('Ludo')"></td>
+                        <td><img src="Tournaments/football.jpg" alt="Football" onclick="showForm('Football')"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Tournaments/carrom.jpg" alt="Carrom" onclick="showForm('Carrom')"></td>
+                        <td><img src="Tournaments/hockey.jpg" alt="Hockey" onclick="showForm('Hockey')"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="form-popup">
+            <h3>Registration Form for <span id="game-name"></span></h3>
+            <form id="registration-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="submit" value="Submit">
+            </form>
+            <p>We will contact you in 1-2 business days after submitting the form.<br>Thank you for your patience :) </p> <!-- Added instructions -->
+            <button onclick="hideForm()">Close</button>
+        </div>
+
+        <div class="thank-you" id="thank-you-message">
+            Thank you for your interest! We will get back to you soon.
+        </div>
+    </div>
+
+    <script>
+        function showForm(game) {
+            document.getElementById('game-name').innerText = game;
+            document.getElementById('form-popup').style.display = 'block';
+            document.getElementById('thank-you-message').style.display = 'none';
+        }
+
+        function hideForm() {
+            document.getElementById('form-popup').style.display = 'none';
+        }
+
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            document.getElementById('form-popup').style.display = 'none';
+            document.getElementById('thank-you-message').style.display = 'block';
+        });
+    </script>
+    <p class="copyright">&copy; Sports Info. All rights reserved.</p>
+
+</body>
+</html>

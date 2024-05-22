@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Game</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0,0,0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Set flex-direction to column */
+        }
+        video {
+            margin-top: 20px; /* Adjust margin */
+            margin-bottom: 1px;
+            width: 300px;
+            height: 200px;
+        }
+
+        nav {
+            margin-top: 1px; /* Adjust margin */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Set display to flex */
+        }
+
+        nav li {
+            margin: 0 80px; /* Adjust margin to create gap */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 32px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 183, 0);
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+
+        th {
+            background-color: rgb(253, 245, 235);
+            color: rgb(0, 0, 0);
+        }
+
+        td img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .game-button {
+            background-color: rgb(254, 175, 56);
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .copyright {
+            color: rgb(255, 153, 0); /* Change copyright color */
+        }
+
+        /* Styling for indoor games */
+        h2.indoor-games {
+            color: rgb(61, 237, 196);
+        }
+        p.indoor-games {
+            color: rgb(0, 0, 0);
+        }
+
+        /* Styling for outdoor games */
+        h2.outdoor-games {
+            color: rgb(61, 237, 196);
+        }
+        p.outdoor-games {
+            color: rgb(255, 255, 255);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted>
+        <source src="Logo.mp4" type="video/mp4">
+    </video>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="select.html">Select Game</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="about&contact.html">About & Contact Us</a></li>
+        </ul>
+    </nav>
+    <h2 class="indoor-games">Indoor Games</h2>
+    <table>
+        <tr>
+            <td><img src="Images/chess.jpg" alt="Chess"></td>
+            <td>Chess</td>
+            <td>"Life is more than just chess, but chess is more than life." - Anonymous</td>
+            <td><a href="chess.html" class="game-button">Know About Chess</a></td>
+        </tr>
+        <tr>
+            <td><img src="Images/ludo.jpg" alt="Ludo"></td>
+            <td>Ludo</td>
+            <td>"Life is like Ludo. Sometimes you're ahead, sometimes you're behind." - Unknown</td>
+            <td><a href="ludo.html" class="game-button">Know About Ludo</a></td>
+        </tr>
+        <tr>
+            <td><img src="Images/carrom.jpg" alt="Carrom"></td>
+            <td>Carrom</td>
+            <td>"Carrom has a rich history that spans centuries, captivating players worldwide." - Anonymous</td>
+            <td><a href="carrom.html" class="game-button">Know About Carrom</a></td>
+        </tr>
+        <!-- Add more games as needed -->
+    </table>
+
+    <h2 class="outdoor-games">Outdoor Games</h2>
+    <table>
+        <tr>
+            <td><img src="Images/football.jpg" alt="Football"></td>
+            <td>Football</td>
+            <td>"The ball is round, the game is long." - Unknown</td>
+            <td><a href="football.html" class="game-button">Know About Football</a></td>
+        </tr>
+        <tr>
+            <td><img src="Images/cricket.jpeg" alt="Cricket"></td>
+            <td>Cricket</td>
+            <td>"Cricket is a game where you need to act smart rather than fast." - Sachin Tendulkar</td>
+            <td><a href="cricket.html" class="game-button">Know About Cricket</a></td>
+        </tr>
+        <tr>
+            <td><img src="Images/hockey.jpeg" alt="Hockey"></td>
+            <td>Hockey</td>
+            <td>"The evolution of hockey over centuries reflects its enduring popularity and cultural significance." - Anonymous</td>
+            <td><a href="hockey.html" class="game-button">Know About Hockey</a></td>
+        </tr>
+        <!-- Add more games as needed -->
+    </table>
+
+    <!-- Add more sections for other categories of games if required -->
+    <p class="copyright">&copy; Sports Info. All rights reserved.</p>
+
+</body>
+</html>

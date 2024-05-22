@@ -1,1 +1,2 @@
-# Sports-Info
+# Sports-InFo
+A College Micro Project.

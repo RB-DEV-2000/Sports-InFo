@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            background-color: black;
+            color: rgb(248, 216, 98);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Set flex-direction to column */
+        }
+
+        #logo {
+            margin-top: 20px; /* Adjust margin */
+            width: 220px;
+            height: 120px;
+        }
+
+        nav {
+            margin-top: 20px; /* Adjust margin */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Set display to flex */
+        }
+
+        nav li {
+            margin: 0 80px; /* Adjust margin */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 32px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px; /* Adjust font size */
+            margin-top: 20px; /* Adjust margin-top */
+            margin-bottom: 10px;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px; /* Adjust font size */
+            padding: 20px;
+            margin-top: 10px; /* Adjust margin-top */
+            line-height: 1.5;
+            color: rgb(98, 255, 180); /* Change paragraph color */
+        }
+
+        .about-section {
+            max-width: 800px; /* Adjust max width */
+            margin-top: 40px; /* Adjust margin-top */
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            max-width: 1000px; /* Adjust max width */
+        }
+
+        .section img {
+            width: 300px; /* Adjust image width */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .section .content {
+            max-width: 600px; /* Adjust max width */
+        }
+    </style>
+</head>
+
+<body>
+    <video id="logo" autoplay loop muted>
+        <source src="/Logo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/tournaments.html">Tournaments</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <img src="/Images2/carromimage1.jpeg" alt="Carrom Image">
+        <div class="content">
+            <h1>What is Carrom?</h1>
+            <p>Carrom is a family of tabletop games sharing a similarity in that their mechanics lie somewhere between billiards and table shuffleboard. It is believed to have originated in India, possibly as far back as the 18th century.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>History of Carrom</h1>
+            <p>The game of carrom originated in India, possibly as far back as the 18th century. It is believed to have evolved from an Indian game called "karam." Carrom is played by people of all ages across the Indian subcontinent and beyond.</p>
+        </div>
+        <img src="/Images2/historycarrom.jpg" alt="Carrom Image">
+    </div>
+
+    <div class="section">
+        <img src="/Images2/Carromdetails.jpg" alt="Carrom Image">
+        <div class="content">
+            <h1>How to Play Carrom</h1>
+            <p>Carrom is played on a square board with a pocket in each corner. The goal is to sink the carrom men (wooden disks) into the pockets using the striker, a larger piece. Players take turns flicking the striker with their fingers, aiming to hit the carrom men and score points.</p>
+        </div>
+    </div>
+
+    <p class="copyright">&copy; Sports Info. All rights reserved.</p>
+</body>
+</html>

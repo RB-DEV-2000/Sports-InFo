@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Football</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0,0,0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column; /* Set flex-direction to column */
+        }
+
+        #logo {
+            margin-top: 20px; /* Adjust margin */
+            width: 220px;
+            height: 120px;
+        }
+
+        nav {
+            margin-top: 20px; /* Adjust margin */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Set display to flex */
+        }
+
+        nav li {
+            margin: 0 80px; /* Adjust margin */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 32px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 183, 0);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px; /* Adjust font size */
+            margin-top: 20px; /* Adjust margin-top */
+            margin-bottom: 10px;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px; /* Adjust font size */
+            padding: 20px;
+            margin-top: 10px; /* Adjust margin-top */
+            line-height: 1.5;
+            color: rgb(0 147 5); /* Change paragraph color */
+        }
+
+        .about-section {
+            max-width: 800px; /* Adjust max width */
+            margin-top: 40px; /* Adjust margin-top */
+        }
+        .copyright {
+            color: rgb(255, 180, 66); /* Change copyright color */
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            max-width: 1000px; /* Adjust max width */
+        }
+
+        .section img {
+            width: 475px; /* Adjust image width */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .section .content {
+            max-width: 600px; /* Adjust max width */
+        }
+
+        .table-section {
+            margin-top: 40px;
+            max-width: 1000px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); /* Make table background opaque */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 180, 66); /* Change heading color */
+        }
+    </style>
+</head>
+
+<body>
+    <video id="logo" autoplay loop muted>
+        <source src="Logo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="select.html">Select Game</a></li>
+            <li><a href="tournaments.html">Tournaments</a></li>
+            <li><a href="about&contact.html">About & Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <img src="Images2/footballq.jpeg" alt="Football Image">
+        <div class="content">
+            <h1>What is Football?</h1>
+            <p>Football, also known as soccer, is a team sport played between two teams of eleven players each. It is widely regarded as the world's most popular sport, with millions of fans and players worldwide.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>History of Football</h1>
+            <p>The origins of football can be traced back to ancient civilizations, but modern football as we know it today began in England during the 19th century. It quickly gained popularity and spread to other parts of the world.</p>
+        </div>
+        <img src="Images2/football2.jpeg" alt="Football Image">
+    </div>
+
+    <div class="section">
+        <img src="Images2/football3.jpg" alt="Football Image">
+        <div class="content">
+            <h1>How to Play Football</h1>
+            <p>Football is played on a rectangular field called a pitch, with goals at each end. The objective is to score goals by kicking the ball into the opposing team's goal. Players use their feet, head, or body to control and pass the ball.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h1>Rules of Football</h1>
+            <p>Football has a set of rules that govern how the game is played. Some of the key rules include offside, fouls, free kicks, penalties, and the duration of the game.</p>
+            <p>Offside rule: A player is in an offside position if they are nearer to the opponent's goal line than both the ball and the second-last opponent.</p>
+            <p>Fouls: Fouls are penalized by the award of a free kick or penalty kick to the opposing team, depending on the severity and location of the foul.</p>
+            <p>Free kicks: A free kick is awarded to the opposing team for fouls committed by the opposing team. The ball must be stationary when the kick is taken.</p>
+            <p>Penalties: Penalties are awarded for more serious fouls committed inside the penalty area. The ball is placed on the penalty spot, and the kicker attempts to score against the goalkeeper.</p>
+            <p>Duration of the game: A standard football match consists of two halves, each lasting 45 minutes, with a 15-minute halftime interval.</p>
+        </div>
+        <img src="Images2/football4.jpg" alt="Football Rules Image">
+    </div>
+
+    <div class="table-section">
+        <h2>Most Goals in Football</h2>
+        <table>
+            <tr>
+                <th>Player Name</th>
+                <th>Country of Origin</th>
+                <th>Goals</th>
+                <th>Type of League</th>
+            </tr>
+            <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>Portugal</td>
+                <td>805</td>
+                <td>International and Club</td>
+            </tr>
+            <tr>
+                <td>Lionel Messi</td>
+                <td>Argentina</td>
+                <td>778</td>
+                <td>International and Club</td>
+            </tr>
+            <tr>
+                <td>Josef Bican</td>
+                <td>Austria-Hungary</td>
+                <td>759</td>
+                <td>Club</td>
+            </tr>
+            <tr>
+                <td>Pele</td>
+                <td>Brazil</td>
+                <td>757</td>
+                <td>International and Club</td>
+            </tr>
+            <tr>
+                <td>Romario</td>
+                <td>Brazil</td>
+                <td>749</td>
+                <td>International and Club</td>
+            </tr>
+        </table>
+    </div>
+
+    <p class="copyright">&copy; Sports Info. All rights reserved.</p>
+
+</body>
+</html>
